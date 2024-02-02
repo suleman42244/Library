@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./library.png">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./library.png" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Library</title>
-</head>
-<body>
-    
-</body>
-<script src="./app.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="logo-container">
+          <img src="./library.png" class="logo" />
+          <h1>Library</h1>
+        </div>
+        <button class="btn">+ New Book</button>
+      </div>
+      <div class="form-container">
+        <form class="form">
+          <label for="name">Book Name</label>
+          <input type="text" id="name" class="name" />
+          <label for="author">Author</label>
+          <input type="text" id="author" class="author" />
+          <label for="pages">Number of pages</label>
+          <input type="number" id="pages" class="pages" />
+          <button class="btn-add">Add Book</button>
+        </form>
+      </div>
+    <div class="display"> 
+      <div class="book-display">
+        <h2 class="book-name">Book Name</h2>
+        <h4 class="author-name">Author</h4>
+        <h6 class="pages-number">Number of pages</h6>
+        <div class="btns">
+          <button class="read-btn">Read</button>
+          <button class="delete-btn">Delete</button>
+        </div>
+      </div>
+    </div> 
+    </main>
+  </body>
+  <script src="./app.js"></script>
 </html>
